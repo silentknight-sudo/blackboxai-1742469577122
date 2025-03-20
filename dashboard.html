@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - DriveSure</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#DBEAFE',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <i class="fas fa-car-side text-primary text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">DriveSure</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">My Bookings</a>
+                    <a href="#" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Profile</a>
+                    <button onclick="logout()" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900">Welcome back, User!</h1>
+            <p class="text-gray-600 mt-2">Manage your car rentals and account settings here.</p>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-car text-primary text-2xl mr-3"></i>
+                    <h2 class="text-xl font-semibold">Active Rentals</h2>
+                </div>
+                <p class="text-3xl font-bold text-gray-900">2</p>
+                <a href="#" class="text-primary hover:text-secondary mt-2 inline-block">View Details →</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-history text-primary text-2xl mr-3"></i>
+                    <h2 class="text-xl font-semibold">Past Rentals</h2>
+                </div>
+                <p class="text-3xl font-bold text-gray-900">5</p>
+                <a href="#" class="text-primary hover:text-secondary mt-2 inline-block">View History →</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-star text-primary text-2xl mr-3"></i>
+                    <h2 class="text-xl font-semibold">Rewards Points</h2>
+                </div>
+                <p class="text-3xl font-bold text-gray-900">250</p>
+                <a href="#" class="text-primary hover:text-secondary mt-2 inline-block">Redeem Points →</a>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold mb-4">Recent Activity</h2>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between border-b pb-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
+                        <div>
+                            <h3 class="font-semibold">Tesla Model 3 Rental</h3>
+                            <p class="text-sm text-gray-600">Rental completed successfully</p>
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">2 days ago</span>
+                </div>
+
+                <div class="flex items-center justify-between border-b pb-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-clock text-blue-500 text-xl mr-3"></i>
+                        <div>
+                            <h3 class="font-semibold">BMW 3 Series Booking</h3>
+                            <p class="text-sm text-gray-600">Upcoming rental on March 25</p>
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">1 week ago</span>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-yellow-500 text-xl mr-3"></i>
+                        <div>
+                            <h3 class="font-semibold">Earned Rewards Points</h3>
+                            <p class="text-sm text-gray-600">+50 points added to your account</p>
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">2 weeks ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        function logout() {
+            // Here you would typically clear session/local storage
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
