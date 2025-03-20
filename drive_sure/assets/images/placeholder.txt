@@ -1,0 +1,5 @@
+This directory will contain app images and other visual assets.
+Required images:
+- app_logo.png
+- car_placeholder.png
+- profile_placeholder.png
