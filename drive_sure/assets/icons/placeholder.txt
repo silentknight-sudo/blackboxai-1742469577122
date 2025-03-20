@@ -1,0 +1,5 @@
+This directory will contain app icons and other icon assets.
+Required icons:
+- google.png
+- facebook.png
+- apple.png
