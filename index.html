@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveSure - Car Rental Service</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#DBEAFE',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <i class="fas fa-car-side text-primary text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">DriveSure</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#vehicles" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Vehicles</a>
+                    <a href="#" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    <a href="login.html" class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-secondary transition duration-300">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block">Rent Your Dream Car</span>
+                            <span class="block text-primary">With DriveSure</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            Experience the freedom of self-driven car rentals. Choose from our wide range of vehicles and hit the road with confidence.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#vehicles" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary md:py-4 md:text-lg md:px-10">
+                                    Browse Cars
+                                </a>
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-accent hover:bg-blue-100 md:py-4 md:text-lg md:px-10">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Vehicles Section -->
+    <section id="vehicles" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Featured Vehicles
+                </h2>
+                <p class="mt-4 text-lg text-gray-500">
+                    Choose from our selection of premium vehicles
+                </p>
+            </div>
+
+            <div class="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Vehicle Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg" alt="Tesla Model 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Tesla Model 3</h3>
+                        <p class="mt-2 text-gray-500">Electric | Automatic | 5 Seats</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">$99/day</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition duration-300">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg" alt="BMW 3 Series" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">BMW 3 Series</h3>
+                        <p class="mt-2 text-gray-500">Petrol | Automatic | 5 Seats</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">$89/day</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition duration-300">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg" alt="Mercedes-Benz C-Class" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Mercedes-Benz C-Class</h3>
+                        <p class="mt-2 text-gray-500">Petrol | Automatic | 5 Seats</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">$95/day</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition duration-300">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Why Choose DriveSure?
+                </h2>
+            </div>
+
+            <div class="mt-10 grid gap-8 md:grid-cols-3">
+                <!-- Feature 1 -->
+                <div class="text-center">
+                    <div class="flex justify-center">
+                        <i class="fas fa-shield-alt text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-gray-900">Safe & Secure</h3>
+                    <p class="mt-2 text-gray-500">All our vehicles are regularly maintained and sanitized</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center">
+                    <div class="flex justify-center">
+                        <i class="fas fa-clock text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-gray-900">24/7 Support</h3>
+                    <p class="mt-2 text-gray-500">Round-the-clock customer support for your peace of mind</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center">
+                    <div class="flex justify-center">
+                        <i class="fas fa-wallet text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-gray-900">Best Prices</h3>
+                    <p class="mt-2 text-gray-500">Competitive rates with no hidden charges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">DriveSure</h3>
+                    <p class="text-gray-400">Your trusted partner for self-driven car rentals.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Our Vehicles</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@drivesure.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Street, City, Country</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 DriveSure. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
